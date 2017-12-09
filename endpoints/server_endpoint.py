@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from endpoints.endpoint import Endpoint
 from threading import Thread, Event
 from queue import Queue
@@ -50,7 +49,7 @@ class ServerEndpointLoop(Thread):
 
 class ServerEndpoint(Endpoint):
     def __init__(self, host, port):
-        super(ServerEndpoint, self).__init__(host, port)
+        super().__init__(host, port)
         self._message_queue = Queue()
         self._stop_event = Event()
         self._server_endpoint_loop = ServerEndpointLoop(self._host, self._port, self._message_queue, self._stop_event)
@@ -64,3 +63,6 @@ class ServerEndpoint(Endpoint):
         while self._message_queue.qsize() != 0:
             result.append(self._message_queue.get().decode("utf-8"))
         return result
+
+    def send_message(self, message):
+        pass
