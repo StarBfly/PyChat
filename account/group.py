@@ -1,6 +1,3 @@
-#!/usr/bin/python3
-
-
 class Group:
     def __init__(self, group_data, groupmates):
         if group_data is None:
