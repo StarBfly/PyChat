@@ -16,3 +16,6 @@ class ClientEndpoint(Endpoint):
         if message is None:
             raise ValueError('Message is not defined.')
         self._socket.send(message.encode('utf-8'))
+
+    def receive_messages(self):
+        pass

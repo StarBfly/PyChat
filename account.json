@@ -1,0 +1,49 @@
+{
+    "current_user": {
+        "name": "Star",
+        "surname": "Butterfly",
+        "nickname": "bfly",
+        "endpoint": {
+            "host": "127.0.0.1",
+            "port": 8080
+        }
+    },
+    "users": [
+        {
+            "name": "Pony",
+            "surname": "Head",
+            "nickname": "wheremylegs",
+            "endpoint": {
+                "host": "127.0.0.1",
+                "port": 8080
+            }
+        },
+        {
+            "name": "Moon",
+            "surname": "Butterfly",
+            "nickname": "queen",
+            "endpoint": {
+                "host": "127.0.0.1",
+                "port": 8080
+            }
+        },
+        {
+            "name": "Marco",
+            "surname": "Diaz",
+            "nickname": "swordman",
+            "endpoint": {
+                "host": "127.0.0.1",
+                "port": 8080
+            }
+        }
+    ],
+    "groups": [
+        {
+            "name": "Incredible Bastards",
+            "groupmates": [
+                "swordman",
+                "wheremylegs"
+            ]
+        }
+    ]
+}

@@ -64,3 +64,6 @@ class ServerEndpoint(Endpoint):
         while self._message_queue.qsize() != 0:
             result.append(self._message_queue.get().decode("utf-8"))
         return result
+
+    def send_message(self, message):
+        pass
