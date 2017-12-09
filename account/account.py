@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from account.user import User
 from account.group import Group
 from endpoints.client_endpoint import ClientEndpoint

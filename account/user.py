@@ -1,6 +1,3 @@
-#!/usr/bin/python3
-
-
 class User:
     def __init__(self, user_data, endpoint_type):
         if user_data is None:
