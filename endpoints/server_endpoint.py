@@ -3,6 +3,7 @@ from threading import Thread, Event
 from queue import Queue
 import socket
 
+
 ACCEPT_TIMEOUT = 5
 RECEIVE_TIMEOUT = 5
 RECEIVE_BUFFER_SIZE = 4096
