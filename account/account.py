@@ -6,8 +6,6 @@ from endpoints.server_endpoint import ServerEndpoint
 
 class Account:
     def __init__(self, account_data):
-        if account_data is None:
-            raise ValueError("Account data is undefined.")
         current_user_data = account_data.get("current_user")
         self._current_user = User(current_user_data, ServerEndpoint)
         users_data = account_data.get("users")
